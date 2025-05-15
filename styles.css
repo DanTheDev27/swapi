@@ -2,24 +2,65 @@ body {
     margin: 0;
     background-color: #242830;
 }
-.movieDetails {
+/* Form container */
+#swapi-search-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
     display: flex;
-    border: 5px solid white;
-    max-width: 80%;
+    flex-direction: column;
+    gap: 15px;
     margin: auto;
-    justify-content: space-evenly;
-    align-items: center;
+    margin-top: 100px;
 }
 
-.detailedInfo {
-    display: flex;
-    border: 5px solid white;
-    justify-content: space-evenly;
-    max-width: 80%;
-    margin: auto;
+/* Label styling */
+label {
+    font-size: 14px;
+    color: #555;
 }
-.crawlContainer, .characters, .starships{
-    text-align: center;
-    margin: 25px;
-    border: 5px solid black;
+
+/* Input field styling */
+input[type="text"], select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Button styling */
+button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Result output styling */
+pre#result {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 20px;
+    max-width: 100%;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    display: none; /* Hide by default */
 }
