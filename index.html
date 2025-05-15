@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SWAPI</title>
+</head>
+<body>
+<!-- action="/search" method="GET" -->
+    <form id="swapi-search-form" > 
+
+        <label for="query">Enter Search Term:</label>
+        <input type="text" id="query" name="query" required>
+        <button type="submit">Search</button>
+
+        <label for="swapiType">choose a type to search:</label>
+        <select name="swapiType" id="swapiType">
+            <option value="people">People</option>
+            <option value="planets">Planets</option>
+            <option value="films">Films</option>
+            <option value="species">Species</option>
+            <option value="starships">Starships</option>
+        </select>
+    </form>
+
+    <pre id="result"></pre>
+
+    <script src="main.js"></script>
+</body>
+</html>
