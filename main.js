@@ -20,7 +20,7 @@ document.getElementById('swapi-search-form').addEventListener('submit', async fu
             resultDisplay.style.display = 'block' // show when results are available
         } else {
             resultDisplay.textContent = `No results found for "${query}" in ${type}.`;
-            result.Display.style.display = 'block'; // show even when no results are shown
+            resultDisplay.style.display = 'block'; // show even when no results are shown
         }
         } catch (err) {
             resultDisplay.textContent = `Error: ${err.message}`;
